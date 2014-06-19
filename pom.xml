@@ -58,4 +58,16 @@
         </pluginManagement>
   </build>
 
+<distributionManagement>
+  <repository>
+     <id>beans-releases</id>
+     <name>Internal Releases</name>
+     <url>http://beans-my.dyndns.biz:8081/nexus/content/repositories/beans_releases/</url>
+  </repository>
+  <snapshotRepository>
+     <id>beans-releases</id>
+     <name>Internal Releases</name>
+     <url>http://beans-my.dyndns.biz:8081/nexus/content/repositories/beans_snapshots/</url>
+  </snapshotRepository>
+</distributionManagement>
 </project>
