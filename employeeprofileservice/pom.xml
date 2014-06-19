@@ -7,7 +7,6 @@
     <version>0.1.0-SNAPSHOT</version>
   </parent>
   <artifactId>employeeprofileservice</artifactId>
-<version>${project.version}</version>
   <properties>
 		<spring.data.jpa.version>1.4.3.RELEASE</spring.data.jpa.version>
 		<hibernate.version>4.1.0.Final</hibernate.version>
