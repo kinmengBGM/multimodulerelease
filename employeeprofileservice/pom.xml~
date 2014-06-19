@@ -1,30 +1,40 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-	<modelVersion>4.0.0</modelVersion>
-	<parent>
-		<groupId>com.beans</groupId>
-		<artifactId>leaveapp</artifactId>
-		<version>0.1.0-SNAPSHOT</version>
-	</parent>
-	<artifactId>masterdataservice</artifactId>
-	<properties>
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.beans</groupId>
+    <artifactId>leaveapp</artifactId>
+    <version>0.1.0-SNAPSHOT</version>
+  </parent>
+  <artifactId>employeeprofileservice</artifactId>
+<version>${project.version}</version>
+  <properties>
 		<spring.data.jpa.version>1.4.3.RELEASE</spring.data.jpa.version>
 		<hibernate.version>4.1.0.Final</hibernate.version>
 		<spring.version>4.0.0.RELEASE</spring.version>
 		<project.groupid>com.beans</project.groupid>
+		<project.version>1.0-SNAPSHOT</project.version
 	</properties>
-	<version>${project.version}</version>
-	<name>Master Data Service Project</name>
-  	<description>Master data modules.</description>
-  	
+	
+	<name>EmployeeProfileService Project</name>
+  	<description>Employee profile service module.</description>
 	<dependencies>
 		
+		<dependency>
+			<groupId>${project.groupid}</groupId>
+			<artifactId>common</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>${project.groupid}</groupId>
+			<artifactId>masterdataservice</artifactId>
+			<version>${project.version}</version>
+		</dependency>
 		<dependency>
 			<groupId>${project.groupid}</groupId>
 			<artifactId>utilities</artifactId>
 			<version>${project.version}</version>
 		</dependency>
-		
 		<dependency>
 			<groupId>org.springframework.data</groupId>
 			<artifactId>spring-data-jpa</artifactId>
@@ -77,5 +87,13 @@
 			<version>4.11</version>
 			<scope>test</scope>
 		</dependency>
+		
+		<dependency> 
+  <groupId>org.slf4j</groupId>
+  <artifactId>slf4j-log4j12</artifactId>
+  <version>1.7.6</version>
+  
+  
+</dependency>
 	</dependencies>
 </project>
